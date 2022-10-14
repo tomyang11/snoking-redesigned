@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Responsive Redesign</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <!-- Nav Bar from Boostrap -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Intro">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Problems">Problems</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#LoFi">LoFi Wireframes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Observations">Key Observations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#VDG">Visual Design Guides</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#HiFi-Annotations">HiFi Annotations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#HiFi">HiFi Prototypes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Body Page -->
+      <div class="m-0 bg-white">
+        <!-- Hero Image -->
+        <div id="Home" class="mainImg bg-cover bg-center flex justify-center items-center">
+            <div class="bg-green-600 flex justify-center items-center p-3 rounded-xl font-bold text-3xl">
+                <div class="flex justify-center items-center p-5 rounded-lg border-solid border-4 border-white text-white">
+                    Sno-King Hockey Webpage Redesign
+                </div>
+            </div>
+        </div>
+        <!-- Introduction -->
+        <div id="Intro" class="bg-green-600 flex flex-col justify-start items-center py-5 font-bold text-4xl text-white">
+            Why redesign this site?
+            <div class="flex flex-col justify-start w-4/5 mx-4 bg-green-100 rounded-xl p-3 my-4 text-black">
+                <p class="text-base text-center font-normal my-2">
+                    The Sno-King Hockey website is the homepage for the ice hockey association that I played at growing up, 
+                    therefore it holds a special place in my heart, making its ugliness even more intolerable.
+                </p>
+                <p class="text-lg text-center font-bold my-2">
+                    Let's improve <a class="underline underline-offset-3" target="_blank" rel="noopener noreferrer" href="https://www.snokinghockey.com/">this disaster of a webpage.</a> 
+                </p>
+                <div class="flex flex-row justify-evenly">
+                    <div class="p-3 mx-5 my-3 rounded-xl bg-green-600 hover:bg-green-400 text-black">
+                        <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.snokinghockey.com/">Original Webpage</a>
+                    </div>
+                    <div class="p-3 mx-5 my-3 rounded-xl bg-green-600 hover:bg-green-400 text-black">
+                        <p class="text-white">Link Placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Problems -->
+        <div id="Problems" class="bg-green-100 flex flex-col justify-start p-5">
+            <h2 class="pb-5 text-center font-bold text-4xl">Problems with Current Site</h2>
+            <!-- Accordian from Bootstrap -->
+            <div class="accordion" id="accordionExample">
+                <!-- Item #1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Learnability
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The webpage contradicts the scan pattern of most users by placing action buttons on the left column rather than the bottom right corners. 
+                        Additionally, the shapes of interactive elements such as buttons diverges from most users' mental models as they look more like view-only images. 
+                        Therefore, novice users will have a hard time locating the links and pages they want to navigate to.
+                    </div>
+                  </div>
+                </div>
+                <!-- Item #2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Memorability
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        For casual users, the overuse of opaque images as backgrounds distracts from the texts and other relevant content on the website. This makes the site 
+                      harder to memorize as users will associate content by the images rather than the text which displays more accurate info. The clustering of elements 
+                      into poorly spaced spaces also reduces the memorability of the site as elements lack distinctive location and features.
+                    </div>
+                  </div>
+                </div>
+                <!-- Item #3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Usability
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The webpage lacks hierarchy by having three columns of content jammed horizontally next to each other. The congestion of content 
+                        challenges even expert users as it makes it harder for them to locate the specific links that they are seeking and increases the 
+                        likelihood of clicking on the wrong links, simply owing to the elements' proximity to each other.
+                    </div>
+                  </div>
+                </div>
+                <!-- Item #4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Accessibility
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      The interactive elements on the page lacks contrast, making it difficult for visually impaired users to identify relevant content. Numerous images also 
+                      lack alternative texts and forms lack labels, making it difficult for text readers to parse the webpage. Lastly, the HTML of the webpage contains empty 
+                      links and headings that detract from the quality and readability of the source code.
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Low Fidelity Wireframes Carousel -->
+        <div id="LoFi" class="bg-green-600 p-5 flex flex-col justify-center items-center">
+            <h2 class="pb-5 font-bold text-4xl text-white">Low Fidelity Wireframes</h2>
+            <!-- Carousel from Bootstrap -->
+            <div id="carouselLoFiIndicators" class="carousel slide w-3/4" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/lofi-web.jpg" class="d-block w-100" alt="a sketch of web view of webpage">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/lofi-tablet.jpg" class="d-block w-100" alt="a sketch of tablet view of webpage">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/lofi-phone.jpg" class="d-block w-100" alt="a sketch of phone view of webpage">
+                  </div>
+                </div>
+                <button class="carousel-control-prev bg-gray-200" type="button" data-bs-target="#carouselLoFiIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next bg-gray-200" type="button" data-bs-target="#carouselLoFiIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="mt-4 w-3/4 px-5 py-4 rounded-xl bg-green-100">
+                <h5 class="font-bold text-lg">Significant Changes</h5>
+                <ul class="text-sm font-normal list-disc leading-9">
+                    <li>Interactive elements changed to be buttons rather than image blocks for the sake of clarity.</li>
+                    <li>Replaced 3-column cluster with clearly separate sections that scroll down the page.</li>
+                    <li>Rather than publishing all news equally, the headline news earns a magnified slot, the two secondary news get smaller slots, and the rest go on a news specific page.</li>
+                    <li>Color scheme is simplified by using Sno-King's primary color, navy blue, as the main static color, relegating its secondary color, emerald green, to hover color.</li>
+                    <li>Employs icons such as the magnifiying glass and menu button to reduce the number of statically displaced distractions.</li>
+                </ul>
+              </div>
+        </div>
+        <!-- Visual Design Guides -->
+        <div id="VDG" class="flex flex-col justify-center items-center p-6 bg-green-100">
+            <h2 class="font-bold text-4xl text-center my-4">Visual Design Guides</h2>
+            <img src="./assets/Visual-Design-Guide-1.png" class="w-4/5 my-4" />
+            <img src="./assets/Visual-Design-Guide-2.png" class="w-4/5 my-4" />
+        </div>
+        <!-- High Fidelity Wireframe Annotations -->
+        <div id="HiFi-Annotations" class="bg-green-600 p-5 flex flex-col justify-center items-center">
+            <h2 class="mb-3 font-bold text-4xl text-white">High Fidelity Wireframe Annotations</h2>
+            <p class="text-white text-lg font-medium mb-5">(scroll through)</p>
+            <!-- Carousel from Bootstrap -->
+            <div id="carouselHiFiIndicators" class="carousel slide w-3/4" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/desktop-annotation.png" class="d-block w-100" alt="annotated Figma wireframe of desktop view">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/tablet-annotation.png" class="d-block w-100" alt="annotated Figma wireframe of tablet view">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/phone-annotation.png" class="d-block w-100" alt="annotated Figma wireframe of phone view">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHiFiIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHiFiIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <!-- High Fidelity Prototype -->
+        <div id="HiFi" class="flex flex-col justify-center items-center bg-green-600 p-5">
+            <h2 class="font-bold text-4xl text-center text-white">High Fidelity Prototypes</h2>
+            <p class="my-3 text-white text-lg font-medium">(Enter full screen mode, play with the viewport options, and toggle through the three devices!)</p>
+            <div class="mb-5 mt-2 bg-black">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fuo8wwomOjgh6lPLMEUGRQP%2FResponsive-Redesign-(UI%252FUX-Proj-2)%3Fpage-id%3D0%253A1%26node-id%3D1%253A2%26viewport%3D273%252C379%252C0.07%26scaling%3Dcontain" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
